@@ -1,0 +1,80 @@
+html{
+  color-scheme: dark light;
+}
+:root{
+  /* global colors */
+  --facebook-blue: #4267B2;
+  --twitter-blue: #1DA1F2;
+  --youtube-red: #FF0000;
+  --instagram-red: #F56040;
+  --stapchat-yellow:#FFFC00;
+  --git-hub-gray:#333;
+}
+body{
+  min-height: 100vh;
+  *, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font: inherit; */
+  }
+  img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+  }
+  table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+  ol, ul {
+  list-style: none;
+  }
+  blockquote, q {
+  quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  content: '';
+  content: none;
+  }
+  input, textarea, button, select{
+    font: inherit;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+  }
+}
+/* Variables*/
+$max-width-xsmall: 'max-width: 576px';
+$min-width-xsmall: 'min-width: 576px';
+$max-width-small: 'max-width: 768px';
+$min-width-small: 'min-width: 768px';
+$max-width-medium: 'max-width: 992px';
+$min-width-medium: 'min-width: 992px';
+$max-width-large: 'max-width: 1200px';
+$min-width-large: 'min-width: 1200px';
+
+
+/* components */
+.just-align-center{
+  justify-content: center;
+  align-items: center;
+}
+/* Custom Anchore Tags */
+a.custom-anchor{
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  white-space: nowrap;
+}
+a.custom-anchor::after{
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: blue;
+  bottom: -0.1rem;
+  left: 0;
+  border-radius: 2px;
+}

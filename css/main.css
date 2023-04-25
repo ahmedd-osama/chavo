@@ -1,0 +1,75 @@
+html {
+  color-scheme: dark light;
+}
+
+:root {
+  /* global colors */
+  --facebook-blue: #4267B2;
+  --twitter-blue: #1DA1F2;
+  --youtube-red: #FF0000;
+  --instagram-red: #F56040;
+  --stapchat-yellow:#FFFC00;
+  --git-hub-gray:#333;
+}
+
+body {
+  min-height: 100vh;
+}
+body *, body *::before, body *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+body img, body picture, body svg, body video {
+  display: block;
+  max-width: 100%;
+}
+body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body ol, body ul {
+  list-style: none;
+}
+body blockquote, body q {
+  quotes: none;
+}
+body blockquote:before, body blockquote:after,
+body q:before, body q:after {
+  content: "";
+  content: none;
+}
+body input, body textarea, body button, body select {
+  font: inherit;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables*/
+/* components */
+.just-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Custom Anchore Tags */
+a.custom-anchor {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  white-space: nowrap;
+}
+
+a.custom-anchor::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: blue;
+  bottom: -0.1rem;
+  left: 0;
+  border-radius: 2px;
+}/*# sourceMappingURL=main.css.map */
