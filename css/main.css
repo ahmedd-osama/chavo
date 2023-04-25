@@ -14,6 +14,8 @@ html {
 
 body {
   min-height: 100vh;
+  background-color: var(--bs-light);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 body *, body *::before, body *::after {
   box-sizing: border-box;
@@ -74,10 +76,57 @@ a.custom-anchor::after {
   border-radius: 2px;
 }
 
-a.custom-s {
-  background-color: var(--bs-green);
+.txt-h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  line-height: auto;
+}
+
+.txt-feature {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  line-height: auto;
+  color: var(--bs-secondary);
+}
+
+.txt-body-gray {
+  font-size: 1.125;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  line-height: auto;
+  color: #d9d9d9;
 }
 
 header {
   z-index: 1000;
+}
+header a.nav-link, header a.dropdown-item {
+  color: black !important;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-align: center;
+}
+header a.nav-link:hover, header a.dropdown-item:hover {
+  color: var(--bs-primary) !important;
+}
+header a.dropdown-item {
+  font-size: 1rem;
+}
+@media (max-width: 992px) {
+  header .navbar-collapse ul {
+    min-height: 100vh;
+    padding: 0 0 30vh 0;
+    justify-content: space-around;
+  }
+  header .navbar-collapse ul li > a.btn {
+    width: 50% !important;
+  }
 }/*# sourceMappingURL=main.css.map */

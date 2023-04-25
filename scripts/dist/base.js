@@ -20,3 +20,8 @@ const on = (type, selector, listener, all = false) => {
     }
 };
 // header 
+const navToggle = () => {
+    var _a;
+    (_a = document.querySelector('#navigation-toggler-btn')) === null || _a === void 0 ? void 0 : _a.click();
+};
+document.querySelectorAll('header a.nav-link:not(.dropdown-toggle), header a.dropdown-item').forEach((el) => { el.addEventListener('click', () => window.innerWidth < 992 ? navToggle() : ''); });

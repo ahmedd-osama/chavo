@@ -17,3 +17,7 @@ const on = (type:any, selector:any, listener:any, all = false) => {
   }
 }
 // header 
+const navToggle = () => {
+  document.querySelector('#navigation-toggler-btn')?.click();
+};
+document.querySelectorAll('header a.nav-link:not(.dropdown-toggle), header a.dropdown-item').forEach((el)=>{el.addEventListener('click', ()=>window.innerWidth<992?navToggle():'')})
