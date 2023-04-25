@@ -1,21 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/fontawesome/all.min.css">
-    <link rel="stylesheet" href="css/normalize/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Home | Chavo</title>
+    <!-- css packages -->
+    <link href="css/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">            <!-- Font awesome -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">            <!-- Normalize -->
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">--> <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-custom/custom.css">        <!-- customized bootstrap -->
+    <link rel="stylesheet" href="css/main.css">                           <!-- Main css file -->
 </head>
 <body>
+<header class="position-fixed w-100">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="#">chavo</a>
+    <button class="d-lg-none hamburger hamburger--spin " onclick="this.classList.toggle('is-active')" id="navigation-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
 
-  
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary rounded-pill text-light" href="reservation/">Reservation</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#">Breakfast</a>
+            <a class="dropdown-item" href="#">lunch</a>
+            <a class="dropdown-item" href="#">Dinner</a>
+            <a class="dropdown-item" href="#">Drinks</a>
+            <a class="dropdown-item" href="#">Specials</a>
+            <a class="dropdown-item" href="#">Favorites</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
 </body>
   <script src="scripts/dist/bootstrap.bundle.min.js"></script>
-  <script src="scripts/dist/all.min.js"></script>
-  <script src="jquery/jquery.js"></script>
+  <!-- <script src="scripts/dist/all.min.js"></script> for fontawsome svg conversion--> 
+
+  <script src="scripts/dist/base.js"></script>
   <script src="scripts/dist/app.js"></script>
 </html>

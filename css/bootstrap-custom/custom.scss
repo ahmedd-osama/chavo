@@ -1,0 +1,75 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "scss/functions";
+
+// ------2. Include any default variable overrides here
+$primary:#F2921D ;
+$secondary: #9FC088;
+$dark: #1C0A00;
+$light: #FCFCFC;
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "scss/variables";
+@import "scss/variables-dark";
+
+
+// ------4. Include any default map overrides here
+
+// Create your own map
+$custom-colors: (
+  "custom": #900,
+  "primary": $primary
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+// 5. Include remainder of required parts
+@import "scss/maps";
+@import "scss/mixins";
+@import "scss/root";
+
+// 6. Optionally include any other parts as needed by commenting the ones you do not need
+@import "scss/utilities";
+@import "scss/reboot";
+@import "scss/type";
+// @import "scss/images";
+@import "scss/containers";
+@import "scss/grid";
+// @import "scss/tables";
+// @import "scss/forms";
+@import "scss/buttons";
+@import "scss/transitions";
+@import "scss/dropdown";
+@import "scss/button-group";
+@import "scss/nav";
+@import "scss/navbar";
+// @import "scss/card";
+// @import "scss/accordion";
+// @import "scss/breadcrumb";
+// @import "scss/pagination";
+// @import "scss/badge";
+// @import "scss/alert";
+// @import "scss/progress";
+// @import "scss/list-group";
+// @import "scss/close";
+// @import "scss/toasts";
+// @import "scss/modal";
+// @import "scss/tooltip";
+// @import "scss/popover";
+// @import "scss/carousel";
+// @import "scss/spinners";
+// @import "scss/offcanvas";
+// @import "scss/placeholders";
+// helpers
+@import "scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "scss/utilities/api";
+
+
+
+// --------8. Add additional custom code here
