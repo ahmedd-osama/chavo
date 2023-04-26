@@ -8,7 +8,7 @@ const heroSwiper = new Swiper('.hero-swiper', {
   freeModeMomentumBounce: false,
   autoplay: {
     delay: 0 ,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   slidesPerView: 'auto',
   breakpoints: {
@@ -36,7 +36,7 @@ const heroSwiperR = new Swiper('.hero-swiper-r', {
   speed: 2000,
   autoplay: {
     delay: 0 ,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
   },
   slidesPerView: 'auto',
   breakpoints: {
