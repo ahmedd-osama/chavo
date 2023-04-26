@@ -57,6 +57,10 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   align-items: center;
 }
 
+.section {
+  padding: 100px 0;
+}
+
 /* Custom Anchore Tags */
 a.custom-anchor {
   text-decoration: none;
@@ -78,16 +82,27 @@ a.custom-anchor::after {
 
 .txt-h1 {
   font-family: "IBM Plex Serif", serif;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+  white-space: nowrap;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.13em;
   line-height: auto;
 }
+@media (max-width: 992px) {
+  .txt-h1 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .txt-h1 {
+    font-size: 1.35rem;
+  }
+}
 
 .txt-feature {
   font-family: "IBM Plex Serif", serif;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -129,4 +144,125 @@ header a.dropdown-item {
   header .navbar-collapse ul li > a.btn {
     width: 50% !important;
   }
+}
+
+section.hero {
+  background-color: black;
+  padding-top: 70px;
+  padding-bottom: 0px;
+  overflow: hidden;
+}
+section.hero .video-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+}
+section.hero .video-wrapper .bg-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+section.hero .row {
+  position: relative;
+  z-index: 1;
+  min-height: 80vh;
+  max-height: 1200px;
+}
+section.hero .col-left {
+  background: rgb(8, 5, 5);
+  background: linear-gradient(180deg, rgb(8, 5, 5) 20%, rgba(8, 5, 5, 0.7) 62%, rgba(8, 5, 5, 0.69) 67%, rgba(8, 5, 5, 0.69) 75%, rgba(8, 5, 5, 0) 100%);
+}
+@media (min-width: 768px) {
+  section.hero .col-left {
+    background: linear-gradient(90deg, rgb(8, 5, 5) 20%, rgba(8, 5, 5, 0.7) 62%, rgba(8, 5, 5, 0.69) 67%, rgba(8, 5, 5, 0.69) 75%, rgba(8, 5, 5, 0) 100%);
+  }
+}
+@media (max-width: 768px) {
+  section.hero .col-left, section.hero .col-right {
+    height: 50%;
+  }
+}
+section.hero .col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+section.hero .col-right .hero-swiper, section.hero .col-right .hero-swiper-r {
+  rotate: -30deg;
+  transform-origin: center;
+}
+@media (max-width: 1200px) {
+  section.hero .col-right .hero-swiper, section.hero .col-right .hero-swiper-r {
+    rotate: -50deg;
+  }
+}
+@media (max-width: 992px) {
+  section.hero .col-right .hero-swiper, section.hero .col-right .hero-swiper-r {
+    rotate: -50deg;
+  }
+}
+@media (max-width: 768px) {
+  section.hero .col-right .hero-swiper, section.hero .col-right .hero-swiper-r {
+    rotate: 0deg;
+  }
+}
+section.hero .col-right .hero-swiper-r {
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  section.hero .col-right .hero-swiper-r {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 992px) {
+  section.hero .col-right .hero-swiper-r {
+    margin-top: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  section.hero .col-right .hero-swiper-r {
+    margin-top: 50px;
+  }
+}
+section.hero .col-right .swiper-slide {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+@media (max-width: 992px) {
+  section.hero .col-right .swiper-slide {
+    width: 135px;
+    height: 135px;
+  }
+}
+@media (max-width: 576px) {
+  section.hero .col-right .swiper-slide {
+    width: 120px;
+    height: 120px;
+  }
+}
+section.hero .col-right .swiper-slide:is(:focus, :hover) img {
+  scale: 1.1;
+}
+section.hero .col-right .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+section.hero .col-right .swiper-slide a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: 500ms ease;
 }/*# sourceMappingURL=main.css.map */
