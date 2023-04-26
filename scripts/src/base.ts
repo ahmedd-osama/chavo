@@ -21,3 +21,4 @@ const navToggle = () => {
   document.querySelector('#navigation-toggler-btn')?.click();
 };
 document.querySelectorAll('header a.nav-link:not(.dropdown-toggle), header a.dropdown-item').forEach((el)=>{el.addEventListener('click', ()=>window.innerWidth<992?navToggle():'')})
+// section titles 

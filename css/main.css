@@ -61,6 +61,30 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p {
   padding: 100px 0;
 }
 
+.section-dark {
+  background-color: #000;
+}
+
+.section-title h2, .section-title-left h2, .section-title-right h2 {
+  transition: all 500ms ease-in-out;
+  box-sizing: border-box;
+  width: 0;
+  overflow: hidden;
+  padding: 0 !important;
+}
+.section-title:hover h2, .section-title-left:hover h2, .section-title-right:hover h2 {
+  width: attr(data-title);
+  padding: 0 0.25em !important;
+}
+
+.section-title-right h2 {
+  border-right: 6px solid var(--bs-primary);
+}
+
+.section-title-left h2 {
+  border-left: 6px solid var(--bs-primary);
+}
+
 /* Custom Anchore Tags */
 a.custom-anchor {
   text-decoration: none;
@@ -111,11 +135,21 @@ a.custom-anchor::after {
 }
 
 .txt-body-gray {
-  font-size: 1.125;
+  font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0.13em;
   line-height: auto;
-  color: #d9d9d9;
+  color: var(--bs-gray-500);
+}
+
+.txt-title {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  line-height: auto;
+  color: var(--bs-light);
+  text-transform: uppercase;
 }
 
 header {
@@ -235,6 +269,8 @@ section.hero .col-right .hero-swiper-r {
 section.hero .col-right .swiper-slide {
   width: 150px;
   height: 150px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4666666667), -2px -2px 8px rgba(0, 0, 0, 0.4666666667);
   overflow: hidden;
   border-radius: 16px;
 }
@@ -250,8 +286,10 @@ section.hero .col-right .swiper-slide {
     height: 120px;
   }
 }
-section.hero .col-right .swiper-slide:is(:focus, :hover) img {
-  scale: 1.1;
+@media (min-width: 992px) {
+  section.hero .col-right .swiper-slide:is(:focus, :hover) img {
+    scale: 1.1;
+  }
 }
 section.hero .col-right .swiper-slide a {
   display: block;
@@ -260,6 +298,7 @@ section.hero .col-right .swiper-slide a {
 }
 section.hero .col-right .swiper-slide a img {
   position: absolute;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

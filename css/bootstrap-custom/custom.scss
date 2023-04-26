@@ -13,6 +13,12 @@ $dropdown-border-color:             $primary;
 $dropdown-border-radius:            0px;
 $dropdown-border-width:             5px;
 $dropdown-link-active-color: white;
+$screen-xs: map-get($grid-breakpoints, xs);
+$screen-sm: map-get($grid-breakpoints, sm);
+$screen-md: map-get($grid-breakpoints, md);
+$screen-lg: map-get($grid-breakpoints, lg);
+$screen-xlg: map-get($grid-breakpoints, xlg);
+$screen-xxlg: map-get($grid-breakpoints, xxlg);
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "scss/variables";
 @import "scss/variables-dark";
@@ -80,4 +86,158 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-right: none;
   border-top: none;
   border-bottom: none;
+}
+.btn-icon{
+  width: fit-content;
+  & > .icon{
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    -webkit-transition: opacity 0.3s ease,height 0.4s ease, width 0.4s ease ;
+    transition: opacity 0.3s ease, height 0.4s ease,width 0.4s ease ;
+    transform-origin: center;
+    transform-box:content-box;
+  }
+  &:hover > .icon{
+    opacity: 1;
+    width:1em;
+    height: 1em;
+  }
+  &.show-icon, .xxlg-show-icon{
+    .icon{
+      opacity: 1;
+      width:1em;
+      height: 1em;
+    }
+  }
+  @media (map-get($grid-breakpoints, xs)) {
+    &.md-show-icon{
+      .icon{
+        opacity: 1;
+        width:1em;
+        height: 1em;
+      }
+    }
+  }
+  @media (map-get($grid-breakpoints, sm)) {
+    &.sm-show-icon{
+      .icon{
+        opacity: 1;
+        width:1em;
+        height: 1em;
+      }
+    }
+  }
+  @media (map-get($grid-breakpoints, md)) {
+    &.xsm-show-icon{
+      .icon{
+        opacity: 1;
+        width:1em;
+        height: 1em;
+      }
+    }
+  }
+  @media (map-get($grid-breakpoints, lg)) {
+    &.xsm-show-icon{
+      .icon{
+        opacity: 1;
+        width:1em;
+        height: 1em;
+      }
+    }
+  }
+
+}
+.btn-bg-swap, .btn-bg-swap-light{
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  &:hover{
+    border-color: $light;
+  }
+  &:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: $light;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  &:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  span.text{
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  span.icon{
+    z-index: 20;
+    display: flex;
+  }
+  &:hover span {
+    color: $dark;
+    -webkit-animation: scaleUp 0.3s ease-in-out;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  @-webkit-keyframes scaleUp {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  
+    50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    }
+  
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  }
+  @keyframes scaleUp {
+    0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  
+    50% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  }
+}
+.btn-bg-swap-dark{
+  @extend .btn-bg-swap;
+  &:hover{
+    border-color: $dark;
+  }
+  &:after {
+    background: $dark;
+  }
+    &:hover span {
+    color: $light;
+    -webkit-animation: scaleUp 0.3s ease-in-out;
+    animation: scaleUp 0.3s ease-in-out;
+  }
 }
