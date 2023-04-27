@@ -59,9 +59,6 @@ const heroSwiperR = new Swiper('.hero-swiper-r', {
 
 const menuSwiper = new Swiper('.menu-swiper',{
   direction: 'horizontal',
-  freeMode: true,
-  freeModeMomentum: false,
-  freeModeMomentumBounce: false,
   slidesPerView: 'auto',
   spaceBetween: 30,
   loop: true,
