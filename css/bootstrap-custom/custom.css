@@ -8589,4 +8589,18 @@ progress {
 .btn-bg-swap-dark:hover span {
   color: #FCFCFC;
   animation: scaleUp 0.3s ease-in-out;
+}
+
+.img-wrapper-center {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.img-wrapper-center > img {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  min-height: 100%;
 }/*# sourceMappingURL=custom.css.map */
