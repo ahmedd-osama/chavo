@@ -54,3 +54,25 @@ const heroSwiperR = new Swiper('.hero-swiper-r', {
     }
 }
 });
+
+// Menu section
+
+const menuSwiper = new Swiper('.menu-swiper',{
+  direction: 'horizontal',
+  freeMode: true,
+  freeModeMomentum: false,
+  freeModeMomentumBounce: false,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+})
