@@ -72,3 +72,11 @@ const menuSwiper = new Swiper('.menu-swiper', {
         clickable: true,
     },
 });
+menuSwiper.on('slideChange', (e) => {
+    let activeIndex = e.activeIndex;
+    var slides = e.slides;
+    slides[activeIndex].classList.add('animated-slide');
+    setTimeout(() => {
+        slides[activeIndex].classList.remove('animated-slide');
+    }, 2000);
+});

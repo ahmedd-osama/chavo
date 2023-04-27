@@ -373,11 +373,13 @@ section.menu .swiper-slide a {
   color: white;
   text-decoration: none;
   transition: transform 300ms ease, background 300ms ease;
+  overflow: hidden;
 }
 section.menu .swiper-slide a svg {
   fill: white;
   max-width: 100%;
   max-height: 140px;
+  overflow: visible;
 }
 section.menu .swiper-slide-active a {
   background-color: white;
@@ -386,6 +388,47 @@ section.menu .swiper-slide-active a {
 }
 section.menu .swiper-slide-active a svg {
   fill: var(--bs-primary);
+}
+section.menu .animated-slide.breakfast a svg .g1, section.menu .breakfast.swiper-slide-active:is(:hover, :focus) a svg .g1 {
+  transform-origin: center;
+  animation: rotateIn;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.breakfast a svg .g2, section.menu .breakfast.swiper-slide-active:is(:hover, :focus) a svg .g2 {
+  animation: bounce;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.lunch a svg .g1, section.menu .lunch.swiper-slide-active:is(:hover, :focus) a svg .g1 {
+  animation: jackInTheBox;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.lunch a svg .g2, section.menu .lunch.swiper-slide-active:is(:hover, :focus) a svg .g2 {
+  animation: backInLeft;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.dinner a svg .g1, section.menu .dinner.swiper-slide-active:is(:hover, :focus) a svg .g1 {
+  animation: backInLeft;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.dinner a svg .g2, section.menu .dinner.swiper-slide-active:is(:hover, :focus) a svg .g2 {
+  animation: bounceOutLeft;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.drinks a svg #drink, section.menu .drinks.swiper-slide-active:is(:hover, :focus) a svg #drink {
+  animation: swing;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.specials a svg .g1, section.menu .specials.swiper-slide-active:is(:hover, :focus) a svg .g1 {
+  animation: flipInY;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.deserts a svg .g1, section.menu .deserts.swiper-slide-active:is(:hover, :focus) a svg .g1 {
+  animation: flipInY;
+  animation-duration: 800ms;
+}
+section.menu .animated-slide.deserts a svg .g2, section.menu .deserts.swiper-slide-active:is(:hover, :focus) a svg .g2 {
+  animation: swing;
+  animation-duration: 800ms;
 }
 section.menu .swiper-pagination {
   position: relative;

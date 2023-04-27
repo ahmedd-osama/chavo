@@ -386,10 +386,12 @@ section.menu{
     color: white;
     text-decoration: none;
     transition: transform 300ms ease, background 300ms ease;
+    overflow: hidden;
     svg{
       fill: white;
       max-width: 100%;
       max-height: 140px;
+      overflow: visible;
     }
   }
   .swiper-slide-active a{
@@ -399,6 +401,89 @@ section.menu{
     svg{
       fill: $primary
     }
+  }
+  .animated-slide{
+    &.breakfast{
+      a{
+        svg {
+          .g1{
+            transform-origin: center;
+            animation: rotateIn;
+            animation-duration: 800ms;
+          }
+          .g2{
+            animation: bounce;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+    &.lunch{
+      a{
+        svg {
+          .g1{
+            animation: jackInTheBox;
+            animation-duration: 800ms;
+          }
+          .g2{
+            animation:backInLeft;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+    &.dinner{
+      a{
+        svg {
+          .g1{
+            animation: backInLeft;
+            animation-duration: 800ms;
+          }
+          .g2{
+            animation:bounceOutLeft;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+    &.drinks{
+      a{
+        svg {
+          #drink{
+            animation: swing ;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+    &.specials{
+      a{
+        svg {
+          .g1{
+            animation: flipInY ;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+    &.deserts{
+      a{
+        svg {
+          
+          .g1{
+            animation: flipInY; ;
+            animation-duration: 800ms;
+          }
+          .g2{
+            animation: swing; ;
+            animation-duration: 800ms;
+          }
+        }
+      }
+    }
+  }
+  .swiper-slide-active:is(:hover, :focus){
+    @extend .animated-slide;
   }
   .swiper-pagination{
     position: relative;
