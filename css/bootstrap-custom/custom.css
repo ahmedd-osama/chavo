@@ -8603,6 +8603,8 @@ progress {
   left: 50%;
   translate: -50% -50%;
   min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .underlay-wrapper {

@@ -206,6 +206,13 @@ a.custom-anchor::after{
   line-height: auto;
   color: #ADADAD;
 }
+.txt-body-gray-light{
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing:.13em;
+  line-height: auto;
+  color: #706e6e;
+}
 .txt-title{
   font-family: 'IBM Plex Serif', serif;
   font-size: 2rem;
@@ -375,6 +382,7 @@ section.hero{
           transform: translate(-50%, -50%);
           width: 100%;
           transition:500ms ease; 
+          object-fit: cover;
         }
       }
     }

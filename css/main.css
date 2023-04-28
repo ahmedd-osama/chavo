@@ -187,6 +187,14 @@ a.custom-anchor::after {
   color: #ADADAD;
 }
 
+.txt-body-gray-light {
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.13em;
+  line-height: auto;
+  color: #706e6e;
+}
+
 .txt-title {
   font-family: "IBM Plex Serif", serif;
   font-size: 2rem;
@@ -367,6 +375,8 @@ section.hero .col-right .swiper-slide a img {
   transform: translate(-50%, -50%);
   width: 100%;
   transition: 500ms ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 section.menu .swiper-slide {

@@ -27,7 +27,7 @@
   <header class="position-fixed w-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-      <a class="navbar-brand py-0" href="#"><img src="images/logo/logo-text.svg" alt=""></a>
+      <a class="navbar-brand py-0" href="#"><img src="images/logo/logo-text.svg" alt="logo" aria-label="Link to home page"></a>
       <button class="d-lg-none hamburger hamburger--spin " onclick="this.classList.toggle('is-active')" id="navigation-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
       aria-expanded="false" aria-label="Toggle navigation">
         <span class="hamburger-box">
@@ -66,10 +66,10 @@
           </li>
           <li class="nav-item d-lg-none">
             <div class="socials d-flex justify-content-center gap-2">
-              <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
-              <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
-              <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
-              <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
+              <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
+              <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
+              <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
+              <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
             </div>
           </li>
           <li class="nav-item d-lg-none">
@@ -81,11 +81,12 @@
   </nav>
   </header>
   <section class="hero section">
-    
     <div class="container position-relative">
       <div class="video-wrapper">
         <video autoplay loop muted playsinline class="bg-video">
           <source src="images/videos/3.mp4" type="video/mp4">
+          <track kind="captions" src="cooking-captions.vtt" srclang="en" label="English captions" default>
+          Your browser does not support the video tag.
         </video>
       </div>
       <div class="row postition-relative">
@@ -98,10 +99,10 @@
             <a class="btn btn-lg btn-outline-primary rounded-pill text-light w-40" href="reservation/">Reservation</a>
           </div>
           <div class="socials d-flex mt-3 gap-2 align-items-center">
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-right d-flex flex-column gap-3 py-1" aria-hidden="true">
@@ -270,7 +271,7 @@
   </section>
   <section class="section about">
     <div class="section-title-left show" data-title = "220px">
-      <p class="text-center txt-body-gray">Who are we?</p>
+      <p class="text-center txt-body-gray-light">Who are we?</p>
       <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
         <h2 class="txt-title text-dark w-fit d-inline-block mx-auto " data-title = "220px"> About <br>Us</h2>
       </div>
@@ -332,7 +333,7 @@
   </section>
   <section class="section gallery">
     <div class="section-title-right show">
-      <p class="text-center txt-body-gray">watch all what we offer in the gallary</p>
+      <p class="text-center txt-body-gray-light">watch all what we offer in the gallary</p>
       <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
         <h2 class="txt-title text-dark w-fit d-inline-block mx-auto " data-title = "220px"> Enjoy <br>Gallery</h2>
       </div>
@@ -406,7 +407,7 @@
           <p class="txt-body-gray text-center">©2023</p>
         </div>
         <div class="col-6 col-md-3 col-lg-3">
-          <h6 class="txt-body-gray mt-3 mb-2">Site Map</h6>
+          <p class="txt-body-gray mt-3 mb-2">Site Map</p>
           <a href="#about" class="btn btn-icon a-white d-inline-block w-100 text-start p-0">about <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="#menu" class=" btn-icon a-white d-inline-block w-100 text-start"> Menu  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="#gallery" class="btn-icon a-white d-inline-block w-100 text-start">Gallery <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
@@ -414,7 +415,7 @@
           <a href="#contact" class="btn-icon a-white d-inline-block w-100 text-start">Contact & location <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
         </div>
         <div class="col-6 col-md-3 col-lg-3">
-          <h6 class="txt-body-gray mt-3 mb-2">Menu</h6>
+          <p class="txt-body-gray mt-3 mb-2">Menu</p>
           <a href="menu/#breakfast" class="btn-icon a-white d-inline-block w-100 text-start ">Breakfast <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="menu/#lunch" class="btn-icon a-white d-inline-block w-100 text-start"> Lunch <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="menu/#dinner" class="btn-icon a-white d-inline-block w-100 text-start">Dinner <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
@@ -423,7 +424,7 @@
           <a href="menu/#favorites" class="btn-icon a-white d-inline-block w-100 text-start">Favorites <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
         </div>
         <div class="col-6 col-md-3 col-lg-3">
-          <h6 class="txt-body-gray mt-3 mb-2">contact</h6>
+          <p class="txt-body-gray mt-3 mb-2">contact</p>
           <a href="#about" class="btn-icon a-white d-inline-block w-100 text-start ">contact <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="#menu" class="btn-icon a-white d-inline-block w-100 text-start"> Location <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
           <a href="#gallery" class="btn-icon a-white d-inline-block w-100 text-start">Map <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 448 512" ><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
@@ -434,10 +435,10 @@
       <div class="row pb-3 ">
         <div class="col-md-6 mb-3">
           <div class="socials d-flex mt-3 gap-2 align-items-center justify-content-center justify-content-lg-start">
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
-            <a name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-twitter"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-lg-end gap-3">
