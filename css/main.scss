@@ -568,3 +568,86 @@ section.about{
     border-radius: 16px;
   }
 }
+.section.gallery{
+  .masonry-grid{
+    $default-height: 260px;
+    $half-gutter: 5px;
+    $masonry-grid-item-width-lg: calc(33% - $half-gutter);
+    $masonry-grid-item-width-md: calc(50% - $half-gutter);
+    $masonry-grid-item-width-sm: calc(50% - $half-gutter);
+    $masonry-grid-item-width-xs: 100%;
+    $masonry-grid-margin-top: 10px;
+    $masonry-grid-margin-bottom: 10px;
+    .masonry-grid-item, .masonry-grid-sizer{
+      width: $masonry-grid-item-width-lg;
+      height: $default-height;
+      margin-top: $masonry-grid-margin-top;
+      &:last-child{
+        margin-bottom: $masonry-grid-margin-bottom;
+      }
+    }
+    .masonry-grid-item--width2 { 
+      width: calc($masonry-grid-item-width-lg * 2);
+    }
+    .masonry-grid-item--height2{
+      height: calc($default-height * 2);
+    }
+    @media(#{$max-width-medium}){
+      .masonry-grid-item, .masonry-grid-sizer{
+        width: $masonry-grid-item-width-md;
+      }
+      .masonry-grid-item--width2 { 
+        width: calc(($masonry-grid-item-width-md + $half-gutter) * 2)
+      }
+    }
+    @media(#{$max-width-small}){
+      .masonry-grid-item, .masonry-grid-sizer{
+        width: $masonry-grid-item-width-sm;
+      }
+      .masonry-grid-item--width2 { 
+        width: calc(($masonry-grid-item-width-sm + $half-gutter) * 2)
+      }
+    }
+    @media(#{$max-width-xsmall}){
+      .masonry-grid-item, .masonry-grid-sizer{
+        width: $masonry-grid-item-width-xs;
+      }
+      .masonry-grid-item--width2 { 
+        width: $masonry-grid-item-width-xs;
+      }
+    }
+    @media(#{$max-width-medium}){
+      .masonry-grid-item--md-width2 { 
+        width: calc(($masonry-grid-item-width-md + $half-gutter) * 2)
+      }
+      .masonry-grid-item--md-width1 { 
+        width: $masonry-grid-item-width-md;
+      }
+    }
+    @media(#{$max-width-small}){
+      .masonry-grid-item--sm-width2 { 
+        width: calc(($masonry-grid-item-width-md + $half-gutter) * 2)
+      }
+      .masonry-grid-item--sm-width1 { 
+        width: $masonry-grid-item-width-md;
+      }
+    }
+    @media(#{$max-width-xsmall}){
+      .masonry-grid-item--xs-width2 { 
+        width: calc(($masonry-grid-item-width-xs + $half-gutter) * 2)
+      }
+      .masonry-grid-item--xs-width1 { 
+        width: $masonry-grid-item-width-xs;
+      }
+    }
+  }
+  .img-wrapper-center{
+    overflow: hidden;
+    >img{
+      transition: scale 1500ms ease-in-out;
+    }
+    &:hover >img{
+      scale: 1.1
+    }
+  }
+}

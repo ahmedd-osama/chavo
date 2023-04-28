@@ -510,4 +510,76 @@ section.about .img-wrapper-center > img {
   section.about .img-wrapper-center {
     height: 300px;
   }
+}
+
+.section.gallery .masonry-grid .masonry-grid-item, .section.gallery .masonry-grid .masonry-grid-sizer {
+  width: calc(33% - 5px);
+  height: 260px;
+  margin-top: 10px;
+}
+.section.gallery .masonry-grid .masonry-grid-item:last-child, .section.gallery .masonry-grid .masonry-grid-sizer:last-child {
+  margin-bottom: 10px;
+}
+.section.gallery .masonry-grid .masonry-grid-item--width2 {
+  width: calc((33% - 5px) * 2);
+}
+.section.gallery .masonry-grid .masonry-grid-item--height2 {
+  height: 520px;
+}
+@media (max-width: 992px) {
+  .section.gallery .masonry-grid .masonry-grid-item, .section.gallery .masonry-grid .masonry-grid-sizer {
+    width: calc(50% - 5px);
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--width2 {
+    width: calc((50% - 5px + 5px) * 2);
+  }
+}
+@media (max-width: 768px) {
+  .section.gallery .masonry-grid .masonry-grid-item, .section.gallery .masonry-grid .masonry-grid-sizer {
+    width: calc(50% - 5px);
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--width2 {
+    width: calc((50% - 5px + 5px) * 2);
+  }
+}
+@media (max-width: 576px) {
+  .section.gallery .masonry-grid .masonry-grid-item, .section.gallery .masonry-grid .masonry-grid-sizer {
+    width: 100%;
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--width2 {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .section.gallery .masonry-grid .masonry-grid-item--md-width2 {
+    width: calc((50% - 5px + 5px) * 2);
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--md-width1 {
+    width: calc(50% - 5px);
+  }
+}
+@media (max-width: 768px) {
+  .section.gallery .masonry-grid .masonry-grid-item--sm-width2 {
+    width: calc((50% - 5px + 5px) * 2);
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--sm-width1 {
+    width: calc(50% - 5px);
+  }
+}
+@media (max-width: 576px) {
+  .section.gallery .masonry-grid .masonry-grid-item--xs-width2 {
+    width: calc((100% + 5px) * 2);
+  }
+  .section.gallery .masonry-grid .masonry-grid-item--xs-width1 {
+    width: 100%;
+  }
+}
+.section.gallery .img-wrapper-center {
+  overflow: hidden;
+}
+.section.gallery .img-wrapper-center > img {
+  transition: scale 1500ms ease-in-out;
+}
+.section.gallery .img-wrapper-center:hover > img {
+  scale: 1.1;
 }/*# sourceMappingURL=main.css.map */

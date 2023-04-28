@@ -81,3 +81,10 @@ menuSwiper.on('slideChange', (e:any)=>{
     slides[activeIndex].classList.remove('animated-slide');
   }, 2000);
 })
+// gallery section
+const lightbox = GLightbox({
+  selector: ".glightbox3",
+  touchNavigation: true,
+  loop: true,
+  autoplayVideos: true
+});
