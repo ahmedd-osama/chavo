@@ -87,3 +87,27 @@ const lightbox = GLightbox({
     loop: true,
     autoplayVideos: true
 });
+// gallery section
+const reviewsSwiper = new Swiper('.reviews-wedgit.swiper', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 150,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    parallax: true,
+});
+reviewsSwiper.on('slideChange', (e) => {
+    var _a;
+    let activeIndex = e.activeIndex;
+    var slides = e.slides;
+    console.log(document.querySelector('#meal-img'));
+    (_a = document.querySelector('#meal-img')) === null || _a === void 0 ? void 0 : _a.setAttribute('src', slides[activeIndex].getAttribute('data-img-href'));
+});
