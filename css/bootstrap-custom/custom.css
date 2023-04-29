@@ -8530,17 +8530,18 @@ progress {
   }
 }
 
-.btn-bg-swap, .btn-bg-swap-dark, .btn-bg-swap-light {
+.btn-bg-swap, .btn-bg-swap-black, .btn-bg-swap-dark, .btn-bg-swap-light {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.btn-bg-swap:hover, .btn-bg-swap-dark:hover, .btn-bg-swap-light:hover {
+.btn-bg-swap:hover, .btn-bg-swap-black:hover, .btn-bg-swap-dark:hover, .btn-bg-swap-light:hover {
   border-color: #FCFCFC;
+  color: #000 !important;
 }
-.btn-bg-swap:after, .btn-bg-swap-dark:after, .btn-bg-swap-light:after {
+.btn-bg-swap:after, .btn-bg-swap-black:after, .btn-bg-swap-dark:after, .btn-bg-swap-light:after {
   content: " ";
   width: 0%;
   height: 100%;
@@ -8549,22 +8550,22 @@ progress {
   transition: all 0.4s ease-in-out;
   right: 0;
 }
-.btn-bg-swap:hover::after, .btn-bg-swap-dark:hover::after, .btn-bg-swap-light:hover::after {
+.btn-bg-swap:hover::after, .btn-bg-swap-black:hover::after, .btn-bg-swap-dark:hover::after, .btn-bg-swap-light:hover::after {
   right: auto;
   left: 0;
-  width: 100%;
+  width: 102%;
 }
-.btn-bg-swap span.text, .btn-bg-swap-dark span.text, .btn-bg-swap-light span.text {
+.btn-bg-swap span.text, .btn-bg-swap-black span.text, .btn-bg-swap-dark span.text, .btn-bg-swap-light span.text {
   text-align: center;
   width: 100%;
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }
-.btn-bg-swap span.icon, .btn-bg-swap-dark span.icon, .btn-bg-swap-light span.icon {
+.btn-bg-swap .icon, .btn-bg-swap-black .icon, .btn-bg-swap-dark .icon, .btn-bg-swap-light .icon {
   z-index: 20;
   display: flex;
 }
-.btn-bg-swap:hover span, .btn-bg-swap-dark:hover span, .btn-bg-swap-light:hover span {
+.btn-bg-swap:hover span.text, .btn-bg-swap-black:hover span.text, .btn-bg-swap-dark:hover span.text, .btn-bg-swap-light:hover span.text {
   color: #1C0A00;
   animation: scaleUp 0.3s ease-in-out;
 }
@@ -8582,11 +8583,24 @@ progress {
 
 .btn-bg-swap-dark:hover {
   border-color: #1C0A00;
+  color: #fff !important;
 }
 .btn-bg-swap-dark:after {
   background: #1C0A00;
 }
-.btn-bg-swap-dark:hover span {
+.btn-bg-swap-dark:hover span.text {
+  color: #FCFCFC;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.btn-bg-swap-black:hover {
+  border-color: black;
+  color: #fff !important;
+}
+.btn-bg-swap-black:after {
+  background: black;
+}
+.btn-bg-swap-black:hover span.text {
   color: #FCFCFC;
   animation: scaleUp 0.3s ease-in-out;
 }

@@ -80,7 +80,7 @@
     </div>
   </nav>
   </header>
-  <section class="hero section">
+  <section class="hero section" id="home">
     <div class="container position-relative">
       <div class="video-wrapper">
         <video autoplay loop muted playsinline class="bg-video">
@@ -92,11 +92,11 @@
       <div class="row postition-relative">
         <div class="col-md-6 col-left d-flex flex-column justify-content-center py-5" >
           <h3 class="txt-feature">Chavo</h3>
-          <H1 class="txt-h1 text-light">all the food you love <br> made with <span style="font-family: 'Dancing Script', cursive; font-weight: 700;">love</span></H1>
+          <H1 class="txt-h1 text-light">all the food you love <br> made with <span style="font-family: 'Dancing Script', cursive; font-weight: 700; "class="text-primary">love</span></H1>
           <p class="txt-body-gray">Recommended By 600+ Customers <br><i class="fa-solid fa-location-pin"></i> 928 Trout Dr.Crona, NY 11368</p>
           <div class="d-flex w-100 gap-3 mt-3 flex-wrap">
-            <a class="btn btn-lg btn-primary rounded-pill text-light w-40" href="menu/">Discover Menu</a>
-            <a class="btn btn-lg btn-outline-primary rounded-pill text-light w-40" href="reservation/">Reservation</a>
+            <a class="btn btn-lg btn-primary rounded-pill text-light w-40 btn-icon btn-bg-swap" href="menu/"><span class="text">Discover Menu</span> <span class="icon"><i class="fa-regular fa-file-lines  ms-2"></i></span> </a>
+            <a class="btn btn-lg btn-outline-primary rounded-pill text-light w-40 btn-icon btn-bg-swap" href="reservation/"><span class="text">Reservation</span> <i class="fa-solid fa-calendar-plus icon ms-2"></i> </a>
           </div>
           <div class="socials d-flex mt-3 gap-2 align-items-center">
             <a aria-label="Link to social media" name="Facebook link"  class="btn btn-dark btn-rounded fs-3 border border-light" href="https://facebook.com" role="button"> <i class="fa-brands fa-facebook"></i></a>
@@ -149,7 +149,7 @@
       </div>
     </div>
   </section>
-  <section class="menu section section-dark" >
+  <section class="menu section section-dark"id="menu" >
     <div class="section-title-right show" data-title = "220px">
       <p class="text-center txt-body-gray">Meet our delicious dishes</p>
       <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
@@ -269,7 +269,7 @@
       </div>
     </div>
   </section>
-  <section class="section about">
+  <section class="section about" id="about">
     <div class="section-title-left show" data-title = "220px">
       <p class="text-center txt-body-gray-light">Who are we?</p>
       <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
@@ -331,7 +331,7 @@
       </div>
     </div>
   </section>
-  <section class="section gallery">
+  <section class="section gallery" id="gallery">
     <div class="section-title-right show">
       <p class="text-center txt-body-gray-light">watch all what we offer in the gallary</p>
       <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
@@ -394,7 +394,81 @@
       </div>
     </div>
   </section>
-
+  <section class="section contact" id="contact">
+    <div class="section-title-right show">
+      <p class="text-center txt-body-gray-light">How to reach us</p>
+      <div class="wrapper d-flex jusify-content-center" style="background-color: inherit;">
+        <h2 class="txt-title text-dark w-fit d-inline-block mx-auto " data-title = "220px"> Contact& <br>location</h2>
+      </div>
+    </div>
+    <div class="container py-5 my-5 bg-fixed" style="background-image: url('images/gallery/3.webp');background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+      <div class="row">
+        <div class="col-md-7 border-radius-default overflow-hidden">
+          <iframe  class="border-radius-default" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166730.34985708492!2d-73.8542000666062!3d40.718486798126975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z2YbZitmI2YrZiNix2YPYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1682704661691!5m2!1sar!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-5 border-radius-default bg-black d-flex gap-3 flex-column justify-content-between align-items-center align-items-lg-start p-3 ">
+          <div class="d-flex gap-3 w-100">
+            <div class="icon d-flex just-align-center  border-5 border-white p-2" style="border-right-style: solid; min-width: 70.67px" width="35px">
+              <img src="images/icons/location.svg" alt="location icon" aria-describedby="location image">
+            </div>
+            <p class="text-white text-capitalize d-flex align-items-center flex-fill ">
+              53 MYSAMA ST. DOWNTOWN <br>NYC, USA 
+            </p>
+          </div>
+          <div class="d-flex gap-3 w-100">
+            <div class="icon d-flex just-align-center  border-5 border-white p-2" style="border-right-style: solid;" width="35px">
+              <img src="images/icons/clock.svg" alt="location icon" aria-describedby="location image">
+            </div>
+            <p class="text-white text-capitalize d-flex align-items-center flex-fill ">
+              9 A.M - 11 P.m <br>7 days a week
+            </p>
+          </div>
+          <div class="d-flex gap-3 w-100">
+            <div class="icon d-flex just-align-center  border-5 border-white p-2" style="border-right-style: solid;" width="35px">
+              <img src="images/icons/envelope.svg" alt="location icon" aria-describedby="location image">
+            </div>
+            <p class="text-white text-capitalize d-flex align-items-center flex-fill ">
+              contact@chaveoexample.com <br>complains@chavoexample.com 
+            </p>
+          </div>
+          <div class="d-flex gap-3 w-100">
+            <div class="icon d-flex just-align-center  border-5 border-white p-2" style="border-right-style: solid;" width="35px">
+              <img src="images/icons/phone.svg" alt="location icon" aria-describedby="location image">
+            </div>
+            <p class="text-white text-capitalize d-flex align-items-center flex-fill ">
+              +30 1942 9348 290<br>+30 2905 9384 394 
+            </p>
+          </div>
+          <p class="text-center txt-body-gray">
+            Chavo restaurant chain<br>since 2006
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5  border-radius-default" style="background-color: #9FC088;">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/icons/news-letter.svg" alt="news-letter-image" class="img-fluid">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center gap-2">
+          <div class="title d-flex justify-content-between flex-nowrap w-100 mt-auto">
+            <h1 class="txt-h2 text-white">Subscribe To Our <br> News-Letter</h1>
+            <img src="images/icons/envelope.svg" alt="envelope Icon" style="max-height: 100%">
+          </div>
+          <p class="txt-body text-white">
+            Be the first to know when we make offers or events at chavo’s by subscribing to our News-letter list
+          </p>
+          <form class="d-flex w-100 bg-white rounded-pill p-2 px-4 mt-auto ">
+              <div class="input-group flex-fill py-1">
+                <label for="emailInput"class="position-absolute" ></label>
+                <input type="email" class="form-control border-0 fs-5" id="emailInput" placeholder="name@example.com" style="border: 0; outline: 0;width: 100%; height: 100%;">
+              </div>
+              <button class="btn btn-dark bg-black  h-100 rounded-pill btn-icon"><span class="text">Subscribe</span> <span class="icon"><i class="fa-regular fa-envelope"></i></span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="section-dark">
     <div class="container">

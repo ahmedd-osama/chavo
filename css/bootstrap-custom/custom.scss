@@ -165,6 +165,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   overflow: hidden;
   &:hover{
     border-color: $light;
+    color: $black !important;
   }
   &:after {
     content: " ";
@@ -179,7 +180,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   &:hover::after {
     right: auto;
     left: 0;
-    width: 100%;
+    width: 102%;
   }
   span.text{
     text-align: center;
@@ -188,11 +189,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  span.icon{
+  .icon{
     z-index: 20;
     display: flex;
   }
-  &:hover span {
+  &:hover span.text {
     color: $dark;
     -webkit-animation: scaleUp 0.3s ease-in-out;
     animation: scaleUp 0.3s ease-in-out;
@@ -233,11 +234,27 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   @extend .btn-bg-swap;
   &:hover{
     border-color: $dark;
+    color: $white !important;
   }
   &:after {
     background: $dark;
   }
-    &:hover span {
+    &:hover span.text {
+    color: $light;
+    -webkit-animation: scaleUp 0.3s ease-in-out;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+}
+.btn-bg-swap-black{
+  @extend .btn-bg-swap;
+  &:hover{
+    border-color: black;
+    color: $white !important;
+  }
+  &:after {
+    background: black;
+  }
+    &:hover span.text {
     color: $light;
     -webkit-animation: scaleUp 0.3s ease-in-out;
     animation: scaleUp 0.3s ease-in-out;
