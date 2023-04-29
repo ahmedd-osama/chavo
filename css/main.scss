@@ -720,7 +720,10 @@ section.about{
   // image
   .meal-img.img-wrapper-center{
     height: 100%;
-    min-height: 300px; 
+    min-height: 400px; 
+    @media (#{$max-width-large}){
+      min-height: 300px; 
+    }
     width: 140%;
     margin-left: -20%;
     @media (#{$max-width-small}){

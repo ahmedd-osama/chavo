@@ -648,9 +648,14 @@ section.about .img-wrapper-center > img {
 }
 .section.reviews .meal-img.img-wrapper-center {
   height: 100%;
-  min-height: 300px;
+  min-height: 400px;
   width: 140%;
   margin-left: -20%;
+}
+@media (max-width: 1200px) {
+  .section.reviews .meal-img.img-wrapper-center {
+    min-height: 300px;
+  }
 }
 @media (max-width: 768px) {
   .section.reviews .meal-img.img-wrapper-center {
