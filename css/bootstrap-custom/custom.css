@@ -8472,6 +8472,25 @@ progress {
     display: none !important;
   }
 }
+.just-align-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.only-child-block {
+  display: none;
+}
+.only-child-block:only-child {
+  display: block;
+}
+
+.only-child-flex {
+  display: none;
+}
+.only-child-flex:only-child {
+  display: flex;
+}
+
 .dropdown-menu {
   border-right: none;
   border-top: none;

@@ -112,3 +112,4 @@ reviewsSwiper.on('slideChange', (e:any)=>{
   console.log(document.querySelector('#meal-img'))
   document.querySelector('#meal-img')?.setAttribute('src', slides[activeIndex].getAttribute('data-img-href'));
 })
+// 

@@ -82,6 +82,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 // --------8. Add additional custom code here
+// utilities
+.just-align-center{
+  justify-content: center;
+  align-items: center;
+}
+.only-child-block{
+  display: none;
+  &:only-child{
+    display:block;
+  }
+}
+.only-child-flex{
+  display: none;
+  &:only-child{
+    display:flex;
+  }
+}
 // drop down menus 
 .dropdown-menu{
   border-right: none;
