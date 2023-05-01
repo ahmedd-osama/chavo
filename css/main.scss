@@ -75,6 +75,7 @@ $border-radius: 16px;
 }
 .section{
   padding: $section-y-padding 0;
+  overflow: hidden;
   .section-title, .section-title-left, .section-title-right{
     h2{
       background-color: $light;
